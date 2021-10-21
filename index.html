@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <h1>Library</h1>
+        <button id="add-book">Add Book</button>
+        <table id="catalog"></table>
+        <div id="overlay">
+            <form id="form">
+                <h1>Add book to library</h1>
+                <div class="row">
+                    <label class="column">Title</label>
+                    <input class="column" type="text" id="title" name="title">
+                </div>
+                <div class="row">
+                    <label class="column">Author</label>
+                    <input class="column" type="text" id="author" name="author">
+                </div>
+                <div class="row">
+                    <label class="column">Number of pages: </label>
+                    <input class="column" type="text" id="pages" name="pages">
+                </div>
+                <div class="row">
+                    <label class="column">Has read?</label>
+                    <input class="column" type="checkbox" id="hasRead" name="hasRead">
+                </div>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
